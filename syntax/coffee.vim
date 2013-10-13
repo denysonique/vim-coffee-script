@@ -66,6 +66,8 @@ hi def link coffeeGlobal Type
 syn match coffeeSpecialVar /\<\%(this\|prototype\|arguments\)\>/ display
 hi def link coffeeSpecialVar Special
 
+syn match coffeeFuncVar /\<\%(\w*\)\>\ze \+= (.*)\s*->/ display
+hi def link coffeeFuncVar CoffeeSpecialIdent
 " An @-variable
 syn match coffeeSpecialIdent /@\%(\I\i*\)\?/ display
 hi def link coffeeSpecialIdent Identifier
